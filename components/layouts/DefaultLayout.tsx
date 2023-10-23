@@ -31,7 +31,7 @@ export default function DefaultLayout({children, mainClass, footerClass}: PropsW
                 </div>
             </aside>
 
-            <div className="mt-20 xl:mt-0 w-full xl:w-4/6 relative xl:left-[17%]">
+            <div className="mt-20 xl:mt-0 w-full flex flex-col justify-between xl:w-4/6 relative xl:left-[17%]">
                 <main className={mainClass}>
                     {children}
                 </main>
