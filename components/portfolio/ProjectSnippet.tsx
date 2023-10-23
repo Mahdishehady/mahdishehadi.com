@@ -7,7 +7,7 @@ import {ProjectSnippet as ProjectSnippetType} from '../../lib/types';
 export default function ProjectSnippet({title, slug, categories, publishedAt, image, className}: ProjectSnippetType) {
     return (
         <article className={`bg-primary-400 shadow-lg ${className ?? ''}`}>
-            <div className="relative h-60">
+            <div className="relative h-44">
                 <DefaultLink href={`/portfolio/${slug}`}>
                     <Image src={image} objectFit="cover" layout="fill" />
                 </DefaultLink>
