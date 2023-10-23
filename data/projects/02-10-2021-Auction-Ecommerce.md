@@ -2,7 +2,7 @@
 title: 'Auction Website'
 slug: Auction
 categories: Websites, Django
-image: /images/portfolio/auction-web.png
+image: /images/portfolio/auction.png
 orderDate: 08-09-2022
 finishedOn: 09-09-2022
 status: Completed
