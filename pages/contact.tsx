@@ -19,7 +19,7 @@ export default function Contact() {
                     <div className="text-white shadow-lg bg-primary-400 p-5 py-8 flex-1">
                         <div className="flex justify-between">
                             <span className="text-white">Country:</span>
-                            <span className="text-white text-opacity-70">LB</span>
+                            <span className="text-white text-opacity-70">Lebanon</span>
                         </div>
                         <div className="flex justify-between my-3">
                             <span className="text-white">City:</span>
@@ -38,7 +38,7 @@ export default function Contact() {
                         </div>
                         <div className="flex justify-between my-3">
                             <span className="text-white">Twitter:</span>
-                            <DefaultLink href="/" className="text-white text-opacity-70 hover:text-secondary-100 transition-colors">@Mahdi</DefaultLink>
+                            <DefaultLink href="#" className="text-white text-opacity-70 hover:text-secondary-100 transition-colors">@Mahdi</DefaultLink>
                         </div>
                         <div className="flex justify-between">
                             <span className="text-white">LinkedIn:</span>

@@ -34,7 +34,7 @@ export default function About() {
                 </div>
 
                 <SectionHeading>Short Bio</SectionHeading>
-                <div className="prose prose-invert max-w-full m-0 prose-li:marker:text-secondary-100 prose-a:text-secondary-100 prose-a:no-underline hover:prose-a:text-secondary-50 prose-a:transition-colors prose-a:duration-300  prose-blockquote:border-l-secondary-100 text-white opacity-70 bg-primary-400 p-5 mt-5">
+                {/* <div className="prose prose-invert max-w-full m-0 prose-li:marker:text-secondary-100 prose-a:text-secondary-100 prose-a:no-underline hover:prose-a:text-secondary-50 prose-a:transition-colors prose-a:duration-300  prose-blockquote:border-l-secondary-100 text-white opacity-70 bg-primary-400 p-5 mt-5">
                     <p><i>Certe, nisi voluptatem tanti aestimaretis.</i> Aliud igitur esse censet gaudere, aliud non dolere. Nemo nostrum istius generis asotos iucunde putat vivere. Dolere malum est: in crucem qui agitur, beatus esse non potest. </p>
 
                     <p><i>Certe, nisi voluptatem tanti aestimaretis.</i> Aliud igitur esse censet gaudere, aliud non dolere. Nemo nostrum istius generis asotos iucunde putat vivere. Dolere malum est: in crucem qui agitur, beatus esse non potest. </p>
@@ -54,7 +54,7 @@ export default function About() {
 
                     <p>Quid turpius quam sapientis vitam ex insipientium sermone pendere? Inquit, dasne adolescenti veniam? Quid, quod homines infima fortuna, nulla spe rerum gerendarum, opifices denique delectantur historia? <b>Nunc haec primum fortasse audientis servire debemus.</b> Etsi ea quidem, quae adhuc dixisti, quamvis ad aetatem recte isto modo dicerentur. Bonum incolumis acies: misera caecitas. Non est enim vitium in oratione solum, sed etiam in moribus. </p>
 
-                </div>
+                </div> */}
                 <div className="bg-primary-400 p-5 text-white" />
             </article>
             <div className="flex flex-col lg:flex-row">
