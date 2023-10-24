@@ -39,7 +39,7 @@ export default function Index({snippets}: Props) {
                         </span>&gt;
                         <Link href="/portfolio" passHref={true}>
                             <a className="text-white hover:text-secondary-100">
-                                Check out my best work now by clicking right here...</a>
+                                Full-Stack developer ,check out my best work...</a>
                         </Link>
                         &lt;/<span className="text-secondary-100">
                             code
