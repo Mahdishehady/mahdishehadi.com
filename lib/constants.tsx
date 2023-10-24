@@ -9,15 +9,15 @@ export const monthNames = ["January", "February", "March", "April", "May", "June
 export const links: LinkEntity[] = [
     {
         href: '/',
-        text: 'Home',
+        text: 'Portfolio',
         icon: <Home />,
     },
 
-    {
-        href: '/portfolio',
-        text: 'Portfolio',
-        icon: <Code />,
-    },
+    // {
+    //     href: '/portfolio',
+    //     text: 'Portfolio',
+    //     icon: <Code />,
+    // },
 
     // {
     //     href: '/blog',

@@ -24,7 +24,7 @@ export default function TopNav() {
                 <NextLink href="/" passHref={true}>
                     <a className="flex items-center">
                         <Image src="/images/person.png" width={30} height={30} className="rounded-[50%]" />
-                        <span className="ml-3 text-white text-lg font-bold hover:text-secondary-100 transition-colors" >Aaron Day</span>
+                        <span className="ml-3 text-white text-lg font-bold hover:text-secondary-100 transition-colors" >Mahdi Shehadi</span>
                     </a>
                 </NextLink>
                 <button onClick={() => setOpen(!open)}><Menu className="text-white transition-transform rotate-0 hover:rotate-45" /></button>

@@ -1,28 +1,33 @@
-import Image from 'next/image'
-import Link from 'next/link';
-import { links, priceTables, services, testimonials } from '../lib/constants';
-import React from 'react';
-import PriceTable from '../components/common/PriceTable';
-import Snippet from '../components/common/Snippet';
-import Testimonial from '../components/common/Testimonial';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Scrollbar, A11y } from 'swiper';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 import DefaultLayout from '../components/layouts/DefaultLayout';
 import SectionHeading from '../components/common/SectionHeading';
+import {getAllPostSnippets, getAllProjectSnippets, sortByPublishedAt} from '../lib/blog';
+import {ProjectSnippet as ProjectSnippetType} from '../lib/types';
+import ProjectSnippet from '../components/portfolio/ProjectSnippet';
+import Link from 'next/link';
 import Head from 'next/head';
-import { getPublicBrand } from '../lib/utils';
 
-export default function Home() {
+import React from 'react';
+import Image from 'next/image'
+import { getPublicBrand } from '../lib/utils';
+import SkillBar from '../components/charts/SkillBar';
+import SkillCircle from '../components/charts/SkillCircle';
+
+export type Props = {
+    snippets: ProjectSnippetType[];
+}
+
+export default function Index({snippets}: Props) {
     return (
         <DefaultLayout mainClass="p-6 md:p-10 mt-10 pb-0" footerClass="mx-10">
             <Head>
-                <title>{`Home - ${getPublicBrand()}`}</title>
+                <title>{`Portfolio - ${getPublicBrand()}`}</title>
             </Head>
+
             <section className="relative bottom-5 flex py-[76px] bg-primary-400 bg-opacity-50 items-start">
                 <div className="z-3 absolute bottom-6 right-6  min-h-full w-full bg-primary-500"></div>
+                
                 <Image src="/images/home-bg.jpg" alt="Learn more call to action" layout="fill" objectFit="cover" />
+
                 <div className="min-h-full top-0 bg-primary-400 bg-opacity-50 absolute w-full" ></div>
                 <div className=" z-2 px-10 top-2 w-full relative drop-shadow-md">
                     <h1 className="text-2xl md:text-4xl text-white font-semibold">
@@ -54,7 +59,7 @@ export default function Home() {
                     <span className="text-white ml-4">InternShip</span>
                 </div>
                 <div className="flex justify-center items-center">
-                    <span className="text-secondary-100 font-bold text-2xl">19</span>
+                    <span className="text-secondary-100 font-bold text-2xl">15</span>
                     <span className="text-white ml-4">repositories</span>
                 </div>
                 <div className="flex justify-center items-center">
@@ -63,52 +68,46 @@ export default function Home() {
                 </div>
             </section>
 
-            <section>
-                <SectionHeading>My Services</SectionHeading>
-                <div className="flex flex-col md:flex-row flex-wrap justify-between">
-                    {services.map(service => <Snippet key={service.title} {...service} />)}
+
+
+
+          <SectionHeading as="h1" className="text-2xl my-5">Portfolio</SectionHeading>
+            <div className="flex flex-col md:flex-row  flex-wrap justify-between">
+                {snippets.map(project => <ProjectSnippet key={project.slug} {...project} className=" w-full md:w-[49.3%] mb-4" />)}
+            </div>
+
+            <div className="flex flex-col lg:flex-row">
+                <div className="basis-1/2">
+                    <SectionHeading>Coding Skills</SectionHeading>
+                    <div className="text-white shadow-lg bg-primary-400 p-5 py-8">
+                        <SkillBar progress={91} label="TypeScript:" />
+                        <SkillBar progress={95} label="JavaScript:" className="my-5" />
+                        <SkillBar progress={88} label="CSS" />
+                        <SkillBar progress={89} label="HTML" className="my-5" />
+                        <SkillBar progress={78} label="SQL" />
+                    </div>
                 </div>
-            </section>
-
-            {/* <section>
-                <SectionHeading>Price Plans</SectionHeading>
-                <div className="flex flex-col sm:flex-row flex-wrap justify-between">
-                    {priceTables.map(table => <PriceTable key={table.title} {...table} />)}
+                <div className="basis-1/2 ml-2">
+                    <SectionHeading>Technologies</SectionHeading>
+                    <div className="text-white shadow-lg bg-primary-400 p-5 py-8 flex flex-wrap justify-between">
+                        <SkillCircle progress={91} label="Next.Js" className="basis-1/2 lg:basis-1/4 mb-5 xl:mb-0" />
+                        <SkillCircle progress={5} label="Node.Js" className="basis-1/2 lg:basis-1/4" />
+                        <SkillCircle progress={5} label="Express.Js" className="basis-1/2 lg:basis-1/4" />
+                        <SkillCircle progress={80} label="React.Js" className="basis-1/2 lg:basis-1/4" />
+                    </div>
+                    <div className="mt-2 text-white shadow-lg bg-primary-400 p-5 py-9 flex flex-wrap  justify-between">
+                        <SkillCircle progress={95} label="Bootstrap 5" className="basis-1/2 lg:basis-1/4 mb-5 xl:mb-0" />
+                        <SkillCircle progress={89} label="Tailwind CSS" className="basis-1/2 lg:basis-1/4" />
+                        <SkillCircle progress={81} label="Mongo DB" className="basis-1/2 lg:basis-1/4" />
+                        <SkillCircle progress={91} label="MySQL" className="basis-1/2 lg:basis-1/4" />
+                    </div>
                 </div>
-            </section> */}
-
-            {/* <section>
-                <SectionHeading className="mt-10">Recommendations</SectionHeading>
-                <Swiper
-                    modules={[Pagination, A11y]}
-                    slidesPerView={2}
-                    navigation
-                    pagination={{ clickable: true }}
-                    speed={1500}
-                    breakpoints={{
-                        300: {
-                            slidesPerView: 1,
-                        },
-                        600: {
-                            slidesPerView: 2,
-                        },
-                    }}
-                >
-                    {testimonials.map(testimonial =>
-                        <SwiperSlide key={testimonial.name}>
-                            <div className="py-[23px]"><Testimonial {...testimonial} /></div>
-                        </SwiperSlide>
-                    )}
-                </Swiper>
-            </section>
-
-            <section className="flex justify-between mt-10">
-                <Image src="/images/logo-1.png" width={100} height={100} className="opacity-50 hover:opacity-100 transition-opacity" />
-                <Image src="/images/logo-2.png" width={100} height={100} className="opacity-50 hover:opacity-100 transition-opacity" />
-                <Image src="/images/logo-3.png" width={100} height={100} className="opacity-50 hover:opacity-100 transition-opacity" />
-                <Image src="/images/logo-4.png" width={100} height={100} className="opacity-50 hover:opacity-100 transition-opacity" />
-                <Image src="/images/logo-5.png" width={100} height={100} className="opacity-50 hover:opacity-100 transition-opacity" />
-            </section> */}
+            </div>
         </DefaultLayout>
-    )
+    );
+}
+
+export const getStaticProps = async () => {
+    const snippets = await getAllProjectSnippets();
+    return {props: {snippets: snippets}}
 }
