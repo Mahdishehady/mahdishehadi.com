@@ -26,7 +26,7 @@ export default function Index({snippets}: Props) {
             <section className="relative bottom-5 flex py-[76px] bg-primary-400 bg-opacity-50 items-start">
                 <div className="z-3 absolute bottom-6 right-6  min-h-full w-full bg-primary-500"></div>
                 
-                <Image src="/images/home-bg.jpg" alt="Learn more call to action" layout="fill" objectFit="cover" />
+                <Image src="/images/home-bg.jpg" alt="Learn more call to action" layout="fill"  objectFit="cover"/>
 
                 <div className="min-h-full top-0 bg-primary-400 bg-opacity-50 absolute w-full" ></div>
                 <div className=" z-2 px-10 top-2 w-full relative drop-shadow-md">

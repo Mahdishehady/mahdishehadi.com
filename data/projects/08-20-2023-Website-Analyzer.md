@@ -10,23 +10,28 @@ client: None
 location: beirut ,lebanon
 techStack: Nextjs, Reactjs
 ---
-<p><i>Step into the world of online auctions e-commerce platform,</i> crafted a dynamic marketplace where buyers can engage in the thrill of competitive bidding, and sellers can reach a broad audience. </p>
+<p><i>A Next/React/Typescript project.</i> Website-analyzer is a web application that leverages a custom RESTful API to fetch data from a Python backend. This project represents a significant evolution from a previous version where data was obtained by crawling websites and sitemap scraping, utilizing Python with libraries such as BeautifulSoup for data extraction and HTML, CSS, and JavaScript for data visualization.
 
-<p><i>This eCommerce website is designed to provide a unique online shopping experience with a strong emphasis on auctions. Key features include:</i>  </p>
+In the new version, Website-analyzer is rebuilt from the ground up using modern technologies. It employs React and Next.js to create a highly efficient user interface, while data retrieval is facilitated through RESTful APIs. The project also introduces robust user authentication mechanisms, allowing users to create accounts, log in, and access personalized content. </p>
+
+<p><i>Features:</i>  </p>
 
 <ul>
-	<li>User authentication and registration.</li>
-	<li>Auction listings with detailed product pages.</li>
-    <li>Real-time bidding and automatic bid increments.</li>
-    <li>Product reviews and ratings.</li>
+	<li>Web scraping using BeautifulSoup.</li>
+	<li>Storing scraped data in a MongoDB database.</li>
+    <li>Easily configurable to scrape from different news websites.</li>
+    <li>Visualization with Highcharts: The collected data is fetched from the backend (FASTAPI) via an API and then visualized using Highcharts, allowing for interactive and informative charts to be displayed.</li>
 	
 </ul>
 
 <p><i>Technologies used:</i>  </p>
 <ul>
-	<li>Python</li>
-	<li>Django</li>
-    <li>Bootstrap</li>
-    <li>JavaScript</li>
+	<li>React</li>
+	<li>Next.js</li>
+    <li>MongoDB</li>
+    <li>ShadCN</li>
 	
 </ul>
+
+
+
