@@ -71,7 +71,7 @@ export default function Index({snippets}: Props) {
 
 
 
-          <SectionHeading as="h1" className="text-2xl my-5">Portfolio</SectionHeading>
+          <SectionHeading as="h1" className="text-4xl my-5 flex justify-center">Projects</SectionHeading>
             <div className="flex flex-col md:flex-row  flex-wrap justify-between">
                 {snippets.map(project => <ProjectSnippet key={project.slug} {...project} className=" w-full md:w-[49.3%] mb-4" />)}
             </div>
