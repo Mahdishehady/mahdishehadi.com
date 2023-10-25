@@ -24,13 +24,12 @@ In the new version, Website-analyzer is rebuilt from the ground up using modern 
 	
 </ul>
 
-<p><i>Technologies used:</i>  </p>
+<p><i>Technologies used:</i></p>
 <ul>
 	<li>React</li>
 	<li>Next.js</li>
     <li>MongoDB</li>
-    <li>ShadCN</li>
-	
+    <li>ShadCN</li>	
 </ul>
 
 
