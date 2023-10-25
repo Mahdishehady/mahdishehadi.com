@@ -8,7 +8,7 @@ class MyDocument extends Document {
             <Html>
                 <Head>
                     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
-                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EM01G3PYRV"></script>
+                    <Script async src="https://www.googletagmanager.com/gtag/js?id=G-EM01G3PYRV"></Script>
                     <Script>
                        {` window.dataLayer = window.dataLayer || []
                         function gtag() {
