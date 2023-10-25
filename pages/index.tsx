@@ -11,6 +11,7 @@ import Image from 'next/image'
 import { getPublicBrand } from '../lib/utils';
 import SkillBar from '../components/charts/SkillBar';
 import SkillCircle from '../components/charts/SkillCircle';
+import Script from 'next/script';
 
 export type Props = {
     snippets: ProjectSnippetType[];
@@ -21,6 +22,7 @@ export default function Index({snippets}: Props) {
         <DefaultLayout mainClass="p-6 md:p-10 mt-10 pb-0" footerClass="mx-10">
             <Head>
                 <title>{`Portfolio - ${getPublicBrand()}`}</title>
+                
             </Head>
 
             <section className="relative bottom-5 flex py-[76px] bg-primary-400 bg-opacity-50 items-start">
