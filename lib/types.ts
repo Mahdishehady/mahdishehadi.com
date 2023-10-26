@@ -58,7 +58,7 @@ export type Post = PostSnippet & {
 export type Project = Omit<Post, "excerpt"> & {
     orderDate: string,
     finishedOn: string,
-    status: 'In Progress' | 'Completed',
+    status: 'In Progress' | 'Completed' | "Coming Soon",
     client: string,
     location: string,
     techStack: string,
