@@ -60,8 +60,8 @@ export default function Project({project}: Props) {
                                 <span className="text-white text-opacity-70">{project.status}</span>
                             </div>
                             <div className="flex justify-between my-3">
-                                <span className="text-white">Client:</span>
-                                <span className="text-white text-opacity-70">{project.client}</span>
+                                <span className="text-white">WebsiteLink:</span>
+                                <span className="text-orange-600 text-opacity-70"><a href={`${project.WebsiteLink}`}>{project.WebsiteLink}</a></span>
                             </div>
                             <div className="flex justify-between">
                                 <span className="text-white">Location:</span>

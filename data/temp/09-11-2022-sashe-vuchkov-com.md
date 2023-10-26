@@ -6,7 +6,7 @@ image: /images/portfolio/sashe-vuchkov-com.jpg
 orderDate: 08-11-2022
 finishedOn: 09-11-2022
 status: Completed
-client: Sashe Vuchkov
+WebsiteLink: none
 location: Sofia, Bulgaria
 techStack: TypeScript, Next.Js
 ---

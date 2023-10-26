@@ -59,7 +59,7 @@ export type Project = Omit<Post, "excerpt"> & {
     orderDate: string,
     finishedOn: string,
     status: 'In Progress' | 'Completed' | "Coming Soon",
-    client: string,
+    WebsiteLink: string,
     location: string,
     techStack: string,
 };

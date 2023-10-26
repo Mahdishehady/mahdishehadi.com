@@ -6,7 +6,7 @@ image: /images/portfolio/auction.png
 orderDate: 08-09-2022
 finishedOn: 09-09-2022
 status: Completed
-client: None
+WebsiteLink: None
 location: beirut ,lebanon
 techStack: Django, python
 ---

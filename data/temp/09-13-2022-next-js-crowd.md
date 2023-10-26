@@ -6,7 +6,7 @@ image: /images/portfolio/next-js-crowd.jpg
 orderDate: 09-01-2022
 finishedOn: 09-13-2022
 status: Completed
-client: Redis Hackathon
+WebsiteLink: Redis Hackathon
 location: Remote
 techStack: TypeScript, Next.Js
 ---

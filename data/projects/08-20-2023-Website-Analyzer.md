@@ -6,7 +6,7 @@ image: /images/portfolio/website-analyzer.png
 orderDate: 08-09-2022
 finishedOn: 09-09-2022
 status: In Progress
-client: None
+WebsiteLink: None
 location: beirut ,lebanon
 techStack: Nextjs, Reactjs
 ---
