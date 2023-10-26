@@ -49,7 +49,7 @@ export default function Contact() {
                     <div className="shadow-lg bg-primary-400 p-5 py-8 flex-1 md:mx-3">
                         <div className="flex justify-between">
                             <span className="text-white">Phone:</span>
-                            <DefaultLink href="tel:+1 555 098 888" className="text-white text-opacity-70 hover:text-secondary-100 transition-colors">+96181304012</DefaultLink>
+                            <DefaultLink href="tel:+96181304012" className="text-white text-opacity-70 hover:text-secondary-100 transition-colors">+96181304012</DefaultLink>
                         </div>
                         <div className="flex justify-between my-3">
                             <span className="text-white">Github:</span>
