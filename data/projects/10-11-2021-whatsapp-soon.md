@@ -1,5 +1,5 @@
 ---
-title: 'WhatsApp'
+title: 'WhatsApp "Soon"'
 slug: whatsapp
 categories: Websites, Next.Js,firebase
 image: /images/portfolio/whatsapp.png
