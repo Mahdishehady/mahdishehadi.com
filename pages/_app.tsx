@@ -2,8 +2,21 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'; // Import the Head component
 import Script from 'next/script';
+import { getPublicBrand } from '../lib/utils';
+
+
+//  export const metadata = {
+//   title: {
+//    absolute: getPublicBrand(),
+//   }
+// };
+export const metadata = {
+  title: "Portfolio",
+  description: "Full-stack Dev",
+};
 
 function MyApp({ Component, pageProps }: AppProps) {
+
   return (
     <>
 

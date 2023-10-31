@@ -1,6 +1,9 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import Script from 'next/script'
-
+export const metadata = {
+    title: "Portfolio",
+    description: "Full-stack Dev",
+  };
 class MyDocument extends Document {
     render() {
         return (
