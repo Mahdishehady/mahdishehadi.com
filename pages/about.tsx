@@ -62,8 +62,8 @@ export default function About() {
                     <SectionHeading>Coding Skills</SectionHeading>
                     <div className="text-white shadow-lg bg-primary-400 p-5 py-8">
                         <SkillBar progress={91} label="TypeScript:" />
-                        <SkillBar progress={95} label="JavaScript:" className="my-5" />
-                        <SkillBar progress={88} label="CSS" />
+                        <SkillBar progress={85} label="JavaScript:" className="my-5" />
+                        <SkillBar progress={70} label="CSS" />
                         <SkillBar progress={89} label="HTML" className="my-5" />
                         <SkillBar progress={78} label="SQL" />
                     </div>
@@ -71,16 +71,17 @@ export default function About() {
                 <div className="basis-1/2 ml-2">
                     <SectionHeading>Technologies</SectionHeading>
                     <div className="text-white shadow-lg bg-primary-400 p-5 py-8 flex flex-wrap justify-between">
-                        <SkillCircle progress={91} label="Next.Js" className="basis-1/2 lg:basis-1/4 mb-5 xl:mb-0" />
-                        <SkillCircle progress={5} label="Node.Js" className="basis-1/2 lg:basis-1/4" />
-                        <SkillCircle progress={5} label="Express.Js" className="basis-1/2 lg:basis-1/4" />
-                        <SkillCircle progress={80} label="React.Js" className="basis-1/2 lg:basis-1/4" />
+                        <SkillCircle progress={70} label="Next.Js" className="basis-1/2 lg:basis-1/4 mb-5 xl:mb-0" />
+                        <SkillCircle progress={70} label="Spring Boot" className="basis-1/2 lg:basis-1/4" />
+                        <SkillCircle progress={70} label="React.Js" className="basis-1/2 lg:basis-1/4" />
                     </div>
                     <div className="mt-2 text-white shadow-lg bg-primary-400 p-5 py-9 flex flex-wrap  justify-between">
-                        <SkillCircle progress={95} label="Bootstrap 5" className="basis-1/2 lg:basis-1/4 mb-5 xl:mb-0" />
-                        <SkillCircle progress={89} label="Tailwind CSS" className="basis-1/2 lg:basis-1/4" />
-                        <SkillCircle progress={81} label="Mongo DB" className="basis-1/2 lg:basis-1/4" />
-                        <SkillCircle progress={91} label="MySQL" className="basis-1/2 lg:basis-1/4" />
+                        <SkillCircle progress={70} label="Bootstrap 5" className="basis-1/2 lg:basis-1/4 mb-5 xl:mb-0" />
+                        <SkillCircle progress={70} label="Tailwind CSS" className="basis-1/2 lg:basis-1/4" />
+                        <SkillCircle progress={70} label="Mongo DB" className="basis-1/2 lg:basis-1/4" />
+                        <SkillCircle progress={70} label="MySQL" className="basis-1/2 lg:basis-1/4" />
+                        <SkillCircle progress={70} label="Postgress" className="basis-1/2 lg:basis-1/4" />
+
                     </div>
                 </div>
             </div>
