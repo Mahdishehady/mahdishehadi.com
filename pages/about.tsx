@@ -34,27 +34,15 @@ export default function About() {
                 </div>
 
                 <SectionHeading>Short Bio</SectionHeading>
-                {/* <div className="prose prose-invert max-w-full m-0 prose-li:marker:text-secondary-100 prose-a:text-secondary-100 prose-a:no-underline hover:prose-a:text-secondary-50 prose-a:transition-colors prose-a:duration-300  prose-blockquote:border-l-secondary-100 text-white opacity-70 bg-primary-400 p-5 mt-5">
-                    <p><i>Certe, nisi voluptatem tanti aestimaretis.</i> Aliud igitur esse censet gaudere, aliud non dolere. Nemo nostrum istius generis asotos iucunde putat vivere. Dolere malum est: in crucem qui agitur, beatus esse non potest. </p>
+                <div className="prose prose-invert max-w-full m-0 prose-li:marker:text-secondary-100 prose-a:text-secondary-100 prose-a:no-underline hover:prose-a:text-secondary-50 prose-a:transition-colors prose-a:duration-300  prose-blockquote:border-l-secondary-100 text-white opacity-70 bg-primary-400 p-5 mt-5">
+                    <p> Passionate about turning ideas into code, I recently graduated with a degree in computer science and am excited to embark on my journey as a full-stack developer. My goal is to leverage my technical skills, creativity, and problem-solving mindset to make a meaningful impact in the world of web development.
 
-                    <p><i>Certe, nisi voluptatem tanti aestimaretis.</i> Aliud igitur esse censet gaudere, aliud non dolere. Nemo nostrum istius generis asotos iucunde putat vivere. Dolere malum est: in crucem qui agitur, beatus esse non potest. </p>
+Web Development Enthusiast: With a strong foundation in HTML, CSS, and typescript (JavaScript), I'm eager to dive deep into the world of full-stack development. I've already begun exploring front-end frameworks like [Reactjs, Angular] and back-end technologies such as [ Spring Boot,Nextjs].</p>
 
-                    <p><i>Idem iste, inquam, de voluptate quid sentit?</i> Scio enim esse quosdam, qui quavis lingua philosophari possint; <i>Idemne, quod iucunde?</i> Itaque nostrum est-quod nostrum dico, artis est-ad ea principia, quae accepimus. <a href="http://loripsum.net/" target="_blank">Nunc haec primum fortasse audientis servire debemus.</a> Et quidem iure fortasse, sed tamen non gravissimum est testimonium multitudinis. Illud quaero, quid ei, qui in voluptate summum bonum ponat, consentaneum sit dicere. Sed virtutem ipsam inchoavit, nihil amplius. Idemne, quod iucunde? </p>
-
-                    <ul>
-                        <li>Quid, cum fictas fabulas, e quibus utilitas nulla elici potest, cum voluptate legimus?</li>
-                        <li>Paulum, cum regem Persem captum adduceret, eodem flumine invectio?</li>
-                        <li>Quae cum dixisset paulumque institisset, Quid est?</li>
-                    </ul>
-                    <p><b>Primum Theophrasti, Strato, physicum se voluit;</b> Heri, inquam, ludis commissis ex urbe profectus veni ad vesperum. <i>Quae autem natura suae primae institutionis oblita est?</i> Quae sequuntur igitur? Cur igitur easdem res, inquam, Peripateticis dicentibus verbum nullum est, quod non intellegatur? Que Manilium, ab iisque M. Haec para/doca illi, nos admirabilia dicamus. Estne, quaeso, inquam, sitienti in bibendo voluptas? </p>
-
-                    <blockquote cite="http://loripsum.net">
-                        Negat esse eam, inquit, propter se expetendam.
-                    </blockquote>
-
-                    <p>Quid turpius quam sapientis vitam ex insipientium sermone pendere? Inquit, dasne adolescenti veniam? Quid, quod homines infima fortuna, nulla spe rerum gerendarum, opifices denique delectantur historia? <b>Nunc haec primum fortasse audientis servire debemus.</b> Etsi ea quidem, quae adhuc dixisti, quamvis ad aetatem recte isto modo dicerentur. Bonum incolumis acies: misera caecitas. Non est enim vitium in oratione solum, sed etiam in moribus. </p>
-
-                </div> */}
+                    
+                  
+                   
+                </div>
                 <div className="bg-primary-400 p-5 text-white" />
             </article>
             <div className="flex flex-col lg:flex-row">
