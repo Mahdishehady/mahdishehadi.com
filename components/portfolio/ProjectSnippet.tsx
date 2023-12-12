@@ -9,7 +9,7 @@ export default function ProjectSnippet({title, slug, categories, publishedAt, im
         <article className={`bg-primary-400 shadow-lg ${className ?? ''}`}>
             <div className="relative h-52">
                 <DefaultLink href={`/portfolio/${slug}`}>
-                    <Image src={image} objectFit="none"  layout='fill'/>
+                    <Image src={image} objectFit="cover"  layout='fill'/>
                 </DefaultLink>
             </div>
             <div className="p-4">
